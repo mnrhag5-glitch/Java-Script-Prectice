@@ -31,9 +31,28 @@
 
 //--------lets remove something with event----
 
-document.querySelector(".div").addEventListener("click",function(e){
-    console.log(e)
-  let removeIt = e.target
-  removeIt.remove()
+// document.querySelector(".div").addEventListener("click",function(e){
+//     console.log(e)
+//   let removeIt = e.target
+//   removeIt.remove()
 
-})
+// })
+
+
+//-------Async Code-----------
+
+//---java script is synchronous and single threaded language....
+//---
+
+//--------SET -TIMEOUT-------------
+setTimeout(function(){
+console.log("hello gautam");
+
+},2000)
+
+
+const gautam = function hello(){
+    console.log("hello gautam how are you")
+}
+
+setTimeout(gautam,4000)
