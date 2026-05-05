@@ -56,3 +56,8 @@ const gautam = function hello(){
 }
 
 setTimeout(gautam,4000)
+
+const yoo=function()
+{document.querySelector("h1").innerHTML="this is changed into hello"}
+setTimeout(yoo,2000)
+
